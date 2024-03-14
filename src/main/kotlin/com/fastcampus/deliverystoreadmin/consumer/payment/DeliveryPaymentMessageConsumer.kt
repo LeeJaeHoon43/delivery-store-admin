@@ -18,10 +18,6 @@ class DeliveryPaymentMessageConsumer(
         private val logger = KotlinLogging.logger {}
     }
 
-//    @KafkaListener(
-//        groupId = "delivery-payment-group",
-//        topics = ["delivery-payment-complete"],
-//    )
     fun receiveMessage(message: String) {
         logger.info { "Received message: $message" }
 
