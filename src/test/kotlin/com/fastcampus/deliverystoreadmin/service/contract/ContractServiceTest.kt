@@ -7,7 +7,6 @@ import com.fastcampus.deliverystoreadmin.repository.contract.ContractRepository
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
@@ -17,7 +16,6 @@ import org.mockito.Mockito.`when`
 import org.mockito.junit.jupiter.MockitoExtension
 import java.math.BigDecimal
 import java.time.LocalDate
-import java.time.OffsetDateTime
 import kotlin.random.Random
 
 @ExtendWith(MockitoExtension::class)
@@ -148,12 +146,7 @@ class ContractServiceTest {
             startDate = startDate,
             endDate = endDate,
             contractType = contractType,
-            feeRate = feeRate,
-            isDeleted = false,
-            createdAt = OffsetDateTime.now(),
-            updatedAt = OffsetDateTime.now(),
-            createdBy = "tester",
-            updatedBy = "tester",
+            feeRate = feeRate
         )
     }
 }
